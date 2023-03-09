@@ -96,10 +96,6 @@ const CoffeeStore = (props) => {
     handleCreateCoffeeStore();
   }, [coffeeStoreFromDb]);
 
-  if (router.isFallback) {
-    return <div>Loading...</div>;
-  }
-
   const handleUpvoteButton = async () => {
     try {
       const data = {
@@ -153,6 +149,10 @@ const CoffeeStore = (props) => {
       console.error("Error creating coffee store", error);
     }
   };
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div className={styles.layout}>
