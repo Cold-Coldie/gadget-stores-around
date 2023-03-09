@@ -175,6 +175,7 @@ const CoffeeStore = (props) => {
             height={360}
             className={styles.storeImg}
             alt={name}
+            priority
           />
         </div>
 
