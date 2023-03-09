@@ -163,7 +163,17 @@ const CoffeeStore = (props) => {
       <div className={styles.container}>
         <div className={styles.col1}>
           <div className={styles.backToHomeLink}>
-            <Link href={"/"}>Back to home</Link>
+            <Link href={"/"}>
+              <span className={styles.backIcon}>
+                <Image
+                  src={"/static/icons/back-icon.svg"}
+                  width={24}
+                  height={24}
+                  alt={"back icon"}
+                />
+                Back to home
+              </span>
+            </Link>
           </div>
           <div className={styles.nameWrapper}>
             <h1 className={styles.name}>{name}</h1>
