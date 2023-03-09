@@ -92,6 +92,10 @@ const CoffeeStore = (props) => {
 
   const { name, imgUrl, location } = coffeeStoreFromDb;
 
+  useEffect(() => {
+    handleCreateCoffeeStore();
+  }, [coffeeStoreFromDb]);
+
   if (router.isFallback) {
     return <div>Loading...</div>;
   }
@@ -149,10 +153,6 @@ const CoffeeStore = (props) => {
       console.error("Error creating coffee store", error);
     }
   };
-
-  useEffect(() => {
-    handleCreateCoffeeStore();
-  }, [coffeeStoreFromDb]);
 
   return (
     <div className={styles.layout}>
