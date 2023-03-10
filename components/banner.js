@@ -5,7 +5,7 @@ const Banner = ({ buttonText, handleOnClick }) => {
     <div className={styles.container}>
       <h1 className={styles.title}>
         <span className={styles.title1}>Gadget</span>
-        <span className={styles.title2}>Connoiseur</span>
+        <span className={styles.title2}>Connoisseur</span>
       </h1>
 
       <p className={styles.subTitle}>Discover your local gadget stores!</p>

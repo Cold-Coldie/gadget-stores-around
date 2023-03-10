@@ -158,6 +158,7 @@ const CoffeeStore = (props) => {
     <div className={styles.layout}>
       <Head>
         <title>{name}</title>
+        <meta name="description" content={`${name} gadget store.`} />
       </Head>
 
       <div className={styles.container}>
